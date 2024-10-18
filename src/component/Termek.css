@@ -1,0 +1,49 @@
+
+.termek-test {
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 16px; 
+  margin: 16px; 
+  text-align: center; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s; 
+}
+
+.termek-test:hover {
+  transform: scale(1.05); 
+}
+
+.termek-kep {
+  max-width: 80%; 
+  height: auto; 
+  border-radius: 4px;
+}
+
+.termek-nev {
+  margin: 10px 0; 
+}
+
+.termek-leiras {
+  font-size: 13px;
+   text-align: start;
+  color: #656489; 
+}
+
+.termek-ar, .termek-db {
+  margin: 10px;
+}
+
+.kosar-gomb {
+  background-color: #2874a7; 
+  color: white;
+  border: none; 
+  border-radius: 4px; 
+  padding: 10px 20px;
+  cursor: grab; 
+  transition: background-color 0.2s; 
+}
+
+.kosar-gomb:hover {
+  background-color: #1a5074; 
+}
+

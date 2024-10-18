@@ -1,0 +1,16 @@
+.kosar {
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #7d98c5;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }

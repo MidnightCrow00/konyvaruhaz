@@ -1,0 +1,10 @@
+
+.termekek {
+    padding: 20px;
+  }
+  
+  .termek {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+  }
