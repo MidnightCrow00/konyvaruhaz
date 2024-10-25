@@ -1,36 +1,12 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import './App.css';
 import Kosar from './component/Kosar';
 import Termekek from './component/Termekek';
-import termekLista from './adatok';
+import { KosarContext  } from './context/KosarContext';
 
 
 function App() {
-  const[kosar, setKosar]=useState([]);
-  const [termekek, setTermekek] = useState(termekLista); 
-
-  const kosarhozAd = (termek) => {
-    const meglevoTermek = kosar.find(t => t.id === termek.id);
-  
-  if (termek.db > 0) {
-    if (meglevoTermek) {
-      setKosar(kosar.map(t => 
-        t.id === termek.id ? { ...t, db: t.db + 1 } : t
-      ));
-      
-      setTermekek(termekek.map(t => 
-        t.id === termek.id ? { ...t, db: t.db - 1 } : t
-      ));
-    } else {
-      setKosar([...kosar, { ...termek, db: 1 }]);
-      setTermekek(termekek.map(t => 
-        t.id === termek.id ? { ...t, db: t.db - 1 } : t
-      ));
-    }
-  }
-  };
-
-
+  const { kosar, termekek, kosarhozAd } = useContext(KosarContext);
   return (
     <div className="App">
       <header className="App-header">
